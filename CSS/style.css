@@ -39,6 +39,13 @@ header{
     left: 0;
     right: 0;
     height: 100px;
+    transition: 0.3s;
+}
+
+header.active{
+    background: var(--black-color);
+    border-bottom: 1px solid #262626;
+    z-index: 1000;
 }
 
 header nav{
