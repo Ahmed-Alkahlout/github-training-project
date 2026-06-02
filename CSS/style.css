@@ -1,0 +1,90 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter",sans-serif;
+}
+
+:root{
+    --main_color: #c9f31d;
+    --p_color: #8a8a8a;
+    --bg_color: #1F1F1F;
+    --white_color: #fff;
+    --black-color: #070707;
+    --border-color: rgba(255,255,255,0.1);
+}
+
+body{
+    background: linear-gradient(#111,#262626);
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+    
+}
+
+
+/* Header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo img{
+    width: 200px ;
+}
+
+header nav .links{
+    display: flex;
+    gap: 40px;
+}
+
+header nav .links a{
+    color: var(--white_color);
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header nav .links a:hover{
+    color: var(--main_color);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+header nav .icons{
+    display: flex;
+    gap: 30px;
+}
+
+header nav .icons a{
+    color: var(--main_color);
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+header nav .icons a:hover{
+    scale: 1.4;
+
+}
