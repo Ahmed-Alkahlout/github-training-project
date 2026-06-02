@@ -20,10 +20,7 @@
 }
 
 body{
-    background: linear-gradient(#111,#262626);
-    height: 100vh;
-    width: 100%;
-    
+    background: #131313;
 }
 
 .container{
@@ -87,4 +84,107 @@ header nav .icons a{
 header nav .icons a:hover{
     scale: 1.4;
 
+}
+
+/* Home Section */
+
+img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--white_color);
+    font-family: "DM Sans", sans-serif;
+}
+span{
+    color: var(--main_color);
+}
+p{
+    color: var(--p_color);
+}
+
+.home{
+    padding-top: 100px;
+}
+
+.home .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .div_text{
+    width: 50%;
+}
+
+.home .div_text h4{
+    color: var(--p_color);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.home .div_text h1{
+    font-size: 70px;
+}
+
+.home .div_text h2{
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 0.9;
+}
+
+.home .div_text p{
+    margin: 30px 0;
+    font-size: 18px;
+    width: 80%;
+    line-height: 1.7;
+}
+
+.home .div_img{
+    width: 40%;
+    position: relative;
+    border-radius: 0 0 600px 600px;
+    overflow: hidden ;
+}
+
+.home .btn{
+    font-size: 20px;
+    padding: 18px 50px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    background: var(--main_color);
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black-color);
+    transition: 0.3s;
+}
+
+.btn:hover{
+    scale: 1.1;
+}
+
+.btn_no_bg{
+    color: var(--white_color);
+    text-transform: capitalize;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.btn_no_bg:hover{
+    color: var(--main_color);
+}
+
+.home .div_img .bg_img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
