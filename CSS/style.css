@@ -158,6 +158,7 @@ p{
     position: relative;
     border-radius: 0 0 600px 600px;
     overflow: hidden ;
+    z-index: -1;
 }
 
 .home .btn{
@@ -498,3 +499,345 @@ section{
 
 /* End Contact Section */
 
+
+
+/* Start Responsive */
+
+.close_menu,
+header .links .logo,
+.icon_menu{
+    display: none;
+}
+
+
+
+@media (max-width: 1250px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px){
+    header nav .links{
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        width: 400px;
+        background: var(--black-color);
+        left: -400px;
+        padding: 50px 0;
+        height: 100%;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    header nav .links.active{
+        left: 0;
+    }
+
+    .close_menu{
+    display: block;
+    font-size: 28px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    }
+
+    header .links .logo{
+        display: block;
+    }
+    .icon_menu{
+        display: block;
+        font-size: 28px;
+    }
+
+
+
+    /* Start Home Responsive */
+
+    .home .div_text h4{
+        font-size: 25px;
+    }
+
+    .home .div_text h1{
+        font-size: 55px;
+    }
+
+    .home .div_text h2{
+        font-size: 55px;
+    }
+
+    .home .div_text p{
+        font-size: 16px;
+        margin: 30px auto;
+    }
+
+    .home .btn{
+        font-size: 18px;
+        padding: 16px 40px;
+    }
+
+    .home .container{
+        flex-direction: column;
+    }
+
+    .home .div_text{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .home .btns{
+        justify-content: center;
+    }
+
+    .home{
+        height: auto;
+    }
+
+    /* End Home Responsive */
+
+
+    /* Start About Responsive */
+
+    .about .container{
+        flex-direction: column;
+    }
+
+    .about .div_text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about .div_img{
+        width: 45%;
+    }
+
+    /* End About Responsive */
+
+
+
+    /* Start Services Responsive */
+
+    .services .boxs .box{
+        width: 47%;
+        margin-bottom: 30px;
+    }
+
+    /* End Services Responsive */
+
+
+
+    /* Start Projects Responsive */
+
+    .projects .project_box .text h3 a{
+        font-size: 25px;
+    }
+    .projects .project_box .text h4{
+        font-size: 16px;
+    }
+    .projects .project_box .text p{
+        font-size: 14px;
+    }
+    .projects .project_box .text{
+        font-size: calc(50% - 50px);
+        margin-left: 50px;
+    }
+    .projects .project_box .text .link{
+        color: var(--black-color);
+    }
+
+    /* End Projects Responsive */
+
+
+    /* Start contact Responsive */
+
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .social_contact{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact .social_contact .links{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact .social_contact .links a{
+        width: 50%;
+        font-size: 16px;
+    }
+    .contact .social_contact .links a i{
+        width:35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contact form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact .btn{
+        font-size: 16px;
+        padding: 13px 28px;
+    }
+
+    /* End contact Responsive */
+
+
+
+}
+
+@media (max-width: 500px){
+    header nav .icons a{
+        font-size: 20px;
+    }
+
+    header nav .icons{
+        gap: 15px;
+        align-items: center;
+    }
+
+    header nav .logo img{
+        width: 150px;
+    }
+
+    header nav .links{
+        width: 100%;
+        left: -100%;
+    }
+
+    .icon_menu{
+        margin-left: 15px;
+    }
+
+
+    /* Start Home Responsive */
+
+    .home .div_text h4{
+        font-size: 22px;
+    }
+
+    .home .div_text h1{
+        font-size: 40px;
+    }
+
+    .home .div_text h2{
+        font-size: 40px;
+    }
+
+    .home .div_text p{
+        font-size: 14px;
+        margin: 25px auto;
+        width: 100%;
+    }
+
+    .home .div_img{
+        width: 75%;
+    }
+
+    .home .btn{
+        font-size: 16px;
+        padding: 14px 30px;
+    }
+
+    /* End Home Responsive */
+
+
+    /* Start About Responsive */
+
+    .about .div_text h2{
+        font-size: 30px;
+    }
+    .about .div_text h4{
+        font-size: 20px;
+    }
+    .about .div_text p{
+        font-size: 14px;
+    }
+    .about .div_text ul li{
+        width: 100%;
+        font-size: 14px;
+    }
+    .about .div_img{
+        width: 75%;
+    }
+    .btn{
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .top_section h2{
+        font-size: 23px;
+    }
+
+    
+
+    /* End About Responsive */
+
+
+    /* Start Services Responsive */
+
+    .services .boxs .box{
+        width: 100%;
+    }
+    
+
+    /* End Services Responsive */
+
+
+    /* Start Projects Responsive */
+
+    .projects .project_box{
+        flex-direction: column;
+    }
+    .projects {
+        padding-bottom: 40px;
+    }
+    .projects .project_box img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .projects .project_box .text{
+        width: 100%;
+        margin-left: 0;
+    }
+    .projects .project_box.box2{
+        flex-direction: column;
+    }
+    .projects .project_box .text p{
+        margin-top: 20px 0 30px;
+    }
+    .projects .project_box .text h3 a{
+        font-size: 23px;
+    }
+
+    /* End Projects Responsive */
+
+
+    /* Start Contact Responsive */
+
+    .contact .social_contact .links{
+        flex-direction: column;
+    }
+    .contact .social_contact .links a{
+        width: 100%;
+    }
+    .contact .top_section{
+        margin-bottom: 70px;
+    }
+    .contact form{
+        width: 100%;
+    }
+    .contact form .inputs_form input{
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+
+    /* End Contact Responsive */
+
+}
