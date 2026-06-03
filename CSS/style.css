@@ -93,6 +93,9 @@ header nav .icons a:hover{
 
 }
 
+/* End Header Styling */
+
+
 /* Home Section */
 
 img{
@@ -200,6 +203,8 @@ p{
     z-index: -1;
 }
 
+/* End Home Section */
+
 
 
 /* About Section */
@@ -265,5 +270,59 @@ section{
     width: 35%;
 }
 
+/* End About Section */
 
 
+/* Services Section */
+
+.top_section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.top_section h2{
+    font-size: 30px;
+}
+
+.services .boxs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .boxs .box{
+    width: 30%;
+    text-align: center;
+    padding: 50px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.services .boxs .box i{
+    color: var(--main_color);
+    font-size: 70px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.services .boxs .box h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.services .boxs .box p{
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.services .boxs .box:hover{
+    border-color: var(--main_color);
+
+}
+
+.services .boxs .box:hover i{
+    scale: 1.3  ;
+}
