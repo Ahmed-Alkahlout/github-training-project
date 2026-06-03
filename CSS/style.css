@@ -395,3 +395,106 @@ section{
 
 
 /* End projects Section */
+
+
+
+/* Contact Section */
+
+.contact .top_section{
+    margin-bottom: 100px;
+}
+
+.contact .social_contact{
+    width: 30%;
+}
+
+.contact .social_contact h2{
+    color: var(--white_color);
+    margin-bottom: 40px;
+}
+
+.contact .social_contact .links{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .social_contact .links a{
+    color: var(--white_color);
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+
+.contact .social_contact .links a i{
+    color: var(--bg_color);
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--main_color);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+}
+
+.contact .social_contact .links a:hover{
+    left: 15px;
+}
+
+.contact .container{
+    display: flex;  
+    justify-content: space-between;
+}
+
+.contact form{
+    width: 60%;
+    text-align: center;
+}
+
+.contact form .inputs_form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form .inputs_form input,
+.contact form .inputs_form textarea{
+    border-radius: 5px;
+    padding: 20px;
+    outline: none;
+    background: var(--bg_color);
+    color: var(--white_color);
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.contact form .inputs_form input{
+    width: 48%;
+}
+
+.contact form .inputs_form textarea{
+    width: 100%;
+}
+
+.contact form .inputs_form input:focus,
+.contact form .inputs_form textarea:focus{
+    border-color: var(--main_color);
+}
+
+.contact .btn{
+    outline: none;
+    padding: 15px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .btn:hover{
+    scale: 1.1;
+}
+
+
+/* End Contact Section */
+
